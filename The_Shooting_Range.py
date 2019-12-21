@@ -37,7 +37,7 @@ def Ready():
       win.close()
   if HowManyRounds >= 1:
     while total < HowManyRounds:
-        if WhatCaliber == "9mm":    
+        if WhatCaliber == "1":    
             BulletHole = win.getMouse()
             x = BulletHole.getX()
             y = BulletHole.getY()
@@ -46,7 +46,7 @@ def Ready():
             BulletHole.setOutline("white")
             BulletHole.draw(win)
             total = total + 1
-        if WhatCaliber == ".45 acp":    
+        if WhatCaliber == "2":    
             BulletHole = win.getMouse()
             x = BulletHole.getX()
             y = BulletHole.getY()
@@ -55,7 +55,7 @@ def Ready():
             BulletHole.setOutline("white")
             BulletHole.draw(win)
             total = total + 1
-        if WhatCaliber == "50 AE":    
+        if WhatCaliber == "3":    
             BulletHole = win.getMouse()
             x = BulletHole.getX()
             y = BulletHole.getY()
