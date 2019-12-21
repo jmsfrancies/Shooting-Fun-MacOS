@@ -64,11 +64,14 @@ def Ready():
             BulletHole.setOutline("white")
             BulletHole.draw(win)
             total = total + 1   
-        else:
-            title.setText("Great Shooting! Please Come Again!")
-            win.getMouse()
-            win.getMouse()
-            win.close()
+
+
+
+      
+    title.setText("Great Shooting! Please Come Again!")
+    win.getMouse()
+    win.getMouse()
+    win.close()
 
 
 def main():
