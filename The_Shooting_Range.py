@@ -37,40 +37,38 @@ def Ready():
       win.close()
   if HowManyRounds >= 1:
     while total < HowManyRounds:
-        if True:
-          if WhatCaliber == "9mm":    
-             BulletHole = win.getMouse()
-             x = BulletHole.getX()
-             y = BulletHole.getY()
-             BulletHole = Circle(Point(x,y),2.5)
-             BulletHole.setFill("black")
-             BulletHole.setOutline("white")
-             BulletHole.draw(win)
-             total = total + 1
-          if WhatCaliber == ".45 acp":    
-             BulletHole = win.getMouse()
-             x = BulletHole.getX()
-             y = BulletHole.getY()
-             BulletHole = Circle(Point(x,y),4)
-             BulletHole.setFill("black")
-             BulletHole.setOutline("white")
-             BulletHole.draw(win)
-             total = total + 1
-          if WhatCaliber == "50 AE":    
-             BulletHole = win.getMouse()
-             x = BulletHole.getX()
-             y = BulletHole.getY()
-             BulletHole = Circle(Point(x,y),5.5)
-             BulletHole.setFill("black")
-             BulletHole.setOutline("white")
-             BulletHole.draw(win)
-             total = total + 1   
+        if WhatCaliber == "9mm":    
+            BulletHole = win.getMouse()
+            x = BulletHole.getX()
+            y = BulletHole.getY()
+            BulletHole = Circle(Point(x,y),2.5)
+            BulletHole.setFill("black")
+            BulletHole.setOutline("white")
+            BulletHole.draw(win)
+            total = total + 1
+        if WhatCaliber == ".45 acp":    
+            BulletHole = win.getMouse()
+            x = BulletHole.getX()
+            y = BulletHole.getY()
+            BulletHole = Circle(Point(x,y),4)
+            BulletHole.setFill("black")
+            BulletHole.setOutline("white")
+            BulletHole.draw(win)
+            total = total + 1
+        if WhatCaliber == "50 AE":    
+            BulletHole = win.getMouse()
+            x = BulletHole.getX()
+            y = BulletHole.getY()
+            BulletHole = Circle(Point(x,y),5.5)
+            BulletHole.setFill("black")
+            BulletHole.setOutline("white")
+            BulletHole.draw(win)
+            total = total + 1   
         else:
-           break    
-    title.setText("Great Shooting! Please Come Again!")
-    win.getMouse()
-    win.getMouse()
-    win.close()
+            title.setText("Great Shooting! Please Come Again!")
+            win.getMouse()
+            win.getMouse()
+            win.close()
 
 
 def main():
