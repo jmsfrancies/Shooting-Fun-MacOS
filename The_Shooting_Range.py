@@ -29,9 +29,9 @@ def Ready():
   Target_5.draw(win)
   win.getMouse()
   HowManyRounds = int(input("Enter the number of shots that you would like to take at the target: "))
-  WhatCaliber = input("What Caliber Firearm would you like to use ( 9mm, .45 acp, 50 AE)?")
+  WhatCaliber = input("What Caliber Firearm would you like to use ( 9mm (1), .45 acp (2), 50 AE (3))?")
   total = 0
-  if WhatCaliber != "9mm" and WhatCaliber != ".45 acp" and WhatCaliber != "50 AE":
+  if WhatCaliber != "1" and WhatCaliber != "2" and WhatCaliber != "3":
       print("Caliber is Not Available!")
       win.getMouse()
       win.close()
