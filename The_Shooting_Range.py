@@ -5,7 +5,7 @@ import sys
 import time
 
 
-def Ready(win, title):
+def Ready(win, title, HowManyRounds):
     total = 0
     target_color = ["Blue", "Green", "Yellow", "Orange", "Red"]
     for i in reversed(range(30, 171, 35)):
@@ -14,7 +14,7 @@ def Ready(win, title):
         Target.draw(win)
         total = total + 1
 
-    for i in range(25):
+    for i in range(HowManyRounds):
         BulletHole = win.getMouse()
         x = BulletHole.getX()
         y = BulletHole.getY()
@@ -41,7 +41,7 @@ Where Precision and accuracy get further refined!""")
     HowManyRounds = 30
     WhatCaliber = 1
     win.getMouse()
-    Ready(win, title)
+    Ready(win, title, HowManyRounds)
 
 
 main()
