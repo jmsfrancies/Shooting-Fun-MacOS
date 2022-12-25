@@ -8,12 +8,14 @@ import time
 def Ready(win, title, HowManyRounds):
     total = 0
     target_color = ["Blue", "Green", "Yellow", "Orange", "Red"]
+#for loop that draws the target to shoot at!
     for i in reversed(range(30, 171, 35)):
         Target = Circle(Point(250, 250), i)
         Target.setFill("{0}".format(target_color[total]))
         Target.draw(win)
         total = total + 1
 
+#for loop that draws each shot per mouse click
     for i in range(HowManyRounds):
         BulletHole = win.getMouse()
         x = BulletHole.getX()
@@ -33,13 +35,12 @@ def Ready(win, title, HowManyRounds):
 def main():
     win = GraphWin("The Shooting Range", 500, 500)
     win.setBackground("white")
-    title = Text(Point(250, 25), """Welcome to The Machine Gun Shooting Range!
+    title = Text(Point(250, 25), """Welcome to The Shooting Range!
 Where Precision and accuracy get further refined!""")
     title.setSize(20)
     title.setStyle("bold italic")
     title.draw(win)
     HowManyRounds = 30
-    WhatCaliber = 1
     win.getMouse()
     Ready(win, title, HowManyRounds)
 
