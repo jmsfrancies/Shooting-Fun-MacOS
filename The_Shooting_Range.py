@@ -1,5 +1,5 @@
 # You are welcome to write and include any other Python files you want or need
-# however your game must be started by calling the main function in this file.
+# however the game must be started by calling the main function in this file.
 from graphics import *
 import sys
 
