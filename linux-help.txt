@@ -1,0 +1,9 @@
+#These are modules that I had to install to run the 
+#Shooting Range Fun program on my Linux Machine!
+
+sudo apt install graphicsmagick-imagemagick-f
+sudo apt install graphicsmagick-imagemagick -f
+sudo apt install graphicsmagick-imagemagick-compat -f
+sudo apt install imagemagick-6.q16hdri -f
+sudo apt install python3-tk
+
