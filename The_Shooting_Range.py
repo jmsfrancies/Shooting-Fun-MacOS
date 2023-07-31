@@ -5,14 +5,14 @@ import sys
 
 
 def Ready(win, title, HowManyRounds):
-    total = 0
     target_color = ["Blue", "Green", "Yellow", "Orange", "Red"]
+    total = 0
 #for loop that draws the target to shoot at!
     for i in reversed(range(35, 180, 35)):
         Target = Circle(Point(250, 250), i)
         Target.setFill("{0}".format(target_color[total]))
         Target.draw(win)
-        total = total + 1
+        total += 1
 
 #for loop that draws each shot per mouse click
     for i in range(HowManyRounds):
@@ -39,7 +39,7 @@ Where Precision and accuracy get further refined!""")
     title.setSize(14)
     title.setStyle("bold italic")
     title.draw(win)
-    HowManyRounds = 30
+    HowManyRounds = 15
     win.getMouse()
     Ready(win, title, HowManyRounds)
 
