@@ -4,6 +4,7 @@ from graphics import *
 import sys
 
 def shooting(win,title,HowManyRounds):
+    title.setText("Ready, Aim, Fire!")
 	#for loop that draws each shot per mouse click
     for i in range(HowManyRounds):
         BulletHole = win.getMouse()
@@ -29,8 +30,13 @@ def Ready(win, title, HowManyRounds):
         Target.setFill("{0}".format(target_color[total]))
         Target.draw(win)
         total += 1
+        
+    title.setText("Cock your action! ")
+    win.getMouse()
+    
 
-
+"""Function that starts the graphics window, demands the amount shooting that the user wants to perform,
+and starts the ready function, and shooting function within the program."""
 
 def main():
     win = GraphWin("The Shooting Range", 500, 500)
@@ -40,10 +46,14 @@ Where Precision and accuracy get further refined!""")
     title.setSize(14)
     title.setStyle("bold italic")
     title.draw(win)
-    HowManyRounds = 15
+    Text(Point(200,200), "How Many Rounds: ").draw(win)
+    rounds = Entry(Point(300,200),5)
+    rounds.setText("")
+    rounds.draw(win)
     win.getMouse()
+    HowManyRounds = int(rounds.getText())
+    rounds.undraw()
     Ready(win, title, HowManyRounds)
     shooting(win,title,HowManyRounds)
-
 
 main()
